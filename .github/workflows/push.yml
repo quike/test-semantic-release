@@ -24,10 +24,11 @@ jobs:
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_PACKAGE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GHTOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   release:
       name: Release
+      needs: build
       runs-on: ubuntu-18.04
       steps:
         - name: Checkout
@@ -38,5 +39,5 @@ jobs:
             node-version: 12
         - name: Release
           env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_PACKAGE_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GHTOKEN }}
           run: npx semantic-release@17
