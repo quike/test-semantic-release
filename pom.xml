@@ -4,11 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.quike</groupId>
-  <artifactId>template-maven-single</artifactId>
+  <artifactId>test-semantic-release</artifactId>
   <packaging>jar</packaging>
   <version>${revision}</version>
-  <name>template-maven-single</name>
-  <url>https://github.com/quike/template-maven-single</url>
+  <name>test-semantic-release</name>
+  <url>https://github.com/quike/test-semantic-release</url>
 
   <properties>
     <revision>0.0.0-SNAPSHOT</revision>

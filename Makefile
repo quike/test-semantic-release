@@ -1,5 +1,5 @@
 VERSION := 0.0.0-SNAPSHOT
-APP_NAME = template-maven-single
+APP_NAME = test-semantic-release
 
 all: cleanup build test deploy log-results
 
