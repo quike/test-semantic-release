@@ -1,0 +1,14 @@
+addons:
+  sonarcloud:
+    organization: "quike-github"
+    token:
+      secure: "kydF4OPZu365FUhfJgcrqPHVd6S0cP2XADew4dLAq90YQnn3q2B1I15TxloAm7dtl/srclOdIlzv3brc+e1V6ZgWiqwlpNjBoyYQA0b7JHrTBIBei2qp/xtfS6CbyZQ9+2LqCbLSFPaNN+XQyrJMl0/++Kzdijn3wVygqszKty90aOl38F8kI6OVKbFjhhxe3UeeVkN+PTXyAAjescwp4HsTJgjDwaUt0bS4vKQe+C3wJglulA4dYmSvqIMmCc96SvAhuPdtVKz2ueVmkwkzikSfQgKHseUmx1S6cqQc7g/H8FnKxyTMJ7rOPResItGk38yDI1pLKtP3Osyy58IsrvtiWIR/YOe/+x1VRW502lyExUkdCmTAhKxXHbnBRcZNYmRYG8fhNiWcB+Lrxa5M3l40MAoacOKbhxV3Tb122rXlHYdEYOE+5sSi39jzVnVbjEiIKykcwa1x6FGimxDr/2kfs/jF3ifZvNdUa4oEH8mS+2+ERUEWWZRwYTQh0BhO4dEM/SM4uPxAuRNqqxI6rkobGakgLmt1YHhMnOISYUqgWEwK050m5ScvLbrtK7GsMJNMkauBAGXuhekEqfNWCHR60l78jPi2pKpJj4Z1kKvX7e12olQE1HIbUL/Pe3RaH2DcrFasTpdJsdBIv4RYO9h2nMZlEEnmahas92AOlck="
+
+language: java
+
+jdk:
+  - openjdk11
+
+script:
+  - ./mvnw spotless:check verify -B
+  - sonar-scanner
