@@ -33,7 +33,7 @@
     <exists-maven-plugin.version>0.3.0</exists-maven-plugin.version>
     <jacoco-plugin-version>0.8.5</jacoco-plugin-version>
     <spotless.version>2.3.1</spotless.version>
-    <google-java-format.version>1.8</google-java-format.version>
+    <google-java-format.version>1.9</google-java-format.version>
   </properties>
 
   <scm>
