@@ -22,7 +22,7 @@
     <lombok.version>1.18.12</lombok.version>
     <log4j-api.version>2.13.3</log4j-api.version>
     <guava.version>29.0-jre</guava.version>
-    <junit.version>5.6.2</junit.version>
+    <junit.version>5.9.2</junit.version>
     <!--Official plugins-->
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     <maven-surefire-plugin-version>2.22.2</maven-surefire-plugin-version>
